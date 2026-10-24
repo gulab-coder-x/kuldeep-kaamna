@@ -193,10 +193,8 @@ export const InvitationMain: React.FC = () => {
                   <p className="font-body font-semibold italic text-lg md:text-sm text-sage-dark/70">
                     Warm Regards,
                   </p>
-                  <p className="pt-2 font-script text-4xl">
-                    <span className="text-[#8a1f2d]">Goyal’s</span>
-                    <span className="text-gold-dark">&nbsp; &amp; &nbsp;</span>
-                    <span className="text-[#8a1f2d]">Bansal’s</span>
+                  <p className="pt-2 font-script text-4xl text-[#8a1f2d]">
+                    Goyal’s &amp; Bansal’s
                   </p>
                 </div>
               </div>

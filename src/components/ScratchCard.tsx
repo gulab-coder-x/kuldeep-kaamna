@@ -230,29 +230,15 @@ export const ScratchCard: React.FC<ScratchCardProps> = ({ onRevealed, revealed }
             SATURDAY
           </text>
 
-          {/* Highlighted Romantic Marriage Tagline */}
-          <g transform="translate(0, 2)">
-            <rect
-              x="56"
-              y="146"
-              width="128"
-              height="20"
-              rx="10"
-              fill="#8a1f2d"
-              fillOpacity="0.09"
-              stroke="#8a1f2d"
-              strokeWidth="0.8"
-              strokeOpacity="0.35"
-            />
-            <text
-              x="120"
-              y="160"
-              textAnchor="middle"
-              className="fill-[#8a1f2d] font-body italic text-[11px] font-bold tracking-wide"
-            >
-              We&apos;re getting married!
-            </text>
-          </g>
+          {/* Romantic Marriage Tagline */}
+          <text
+            x="120"
+            y="160"
+            textAnchor="middle"
+            className="fill-[#8a1f2d] font-body italic text-[12px] font-semibold tracking-wide"
+          >
+            We&apos;re getting married!
+          </text>
         </svg>
       </div>
       {!revealed && (
