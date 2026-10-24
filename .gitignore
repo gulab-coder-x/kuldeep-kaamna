@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local backups and captures
+*.bak
+Screenshot*.png
+
+# Logs
+*.log
+npm-debug.log*
