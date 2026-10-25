@@ -12,6 +12,8 @@ Thumbs.db
 # Local backups and captures
 *.bak
 Screenshot*.png
+WhatsApp*.jpeg
+WhatsApp*.jpg
 
 # Logs
 *.log
