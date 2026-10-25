@@ -9,7 +9,7 @@ export interface CalendarEvent {
 export const downloadCalendarEvent = (event: CalendarEvent) => {
   const icsData = `BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Kuldeep & Kaamna Wedding//EN
+PRODID:-//Kaamna & Kuldeep Wedding//EN
 BEGIN:VEVENT
 UID:${Date.now()}@wedding.invitation
 SEQUENCE:0
@@ -18,7 +18,7 @@ DTSTART:${event.start}
 DTEND:${event.end}
 SUMMARY:${event.title}
 LOCATION:${event.location}
-DESCRIPTION:${event.description || "Wedding celebration of Kuldeep & Kaamna"}
+DESCRIPTION:${event.description || "Wedding celebration of Kaamna & Kuldeep"}
 END:VEVENT
 END:VCALENDAR`;
 
@@ -51,7 +51,7 @@ END:VEVENT`
 
   const icsData = `BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Kuldeep & Kaamna Wedding//EN
+PRODID:-//Kaamna & Kuldeep Wedding//EN
 ${vevents}
 END:VCALENDAR`;
 
@@ -59,7 +59,7 @@ END:VCALENDAR`;
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.setAttribute("download", "Kuldeep_Kaamna_Wedding_Celebrations.ics");
+  a.setAttribute("download", "Kaamna_Kuldeep_Wedding_Celebrations.ics");
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);

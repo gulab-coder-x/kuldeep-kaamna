@@ -42,11 +42,11 @@ const EVENTS: WeddingEvent[] = [
     fullAddress: 'Patiala Rd, Military Cantonement, Sangrur, Punjab 148001',
     mapUrl: 'https://maps.app.goo.gl/sZcGQqEJyXGiHKUo9',
     calendarData: {
-      title: 'Sangeet - Kuldeep & Kaamna',
+      title: 'Sangeet - Kaamna & Kuldeep',
       location: 'Yadvindra Dream Hotel, Patiala Rd, Military Cantonement, Sangrur, Punjab 148001',
       start: '20261117T200000',
       end: '20261117T235900',
-      description: 'Sangeet celebration of Kuldeep & Kaamna',
+      description: 'Sangeet celebration of Kaamna & Kuldeep',
     },
   },
   {
@@ -60,11 +60,11 @@ const EVENTS: WeddingEvent[] = [
     fullAddress: '41/1B, Dugri Road, Atam Nagar, Model Town, Ludhiana, Punjab',
     mapUrl: 'https://maps.app.goo.gl/VbTzwTV7LNLPfTx66',
     calendarData: {
-      title: 'Haldi Ceremony - Kuldeep & Kaamna',
+      title: 'Haldi Ceremony - Kaamna & Kuldeep',
       location: 'Hotel Karlton Inn 41/1B, Dugri Road, Atam Nagar, Model Town, Ludhiana, Punjab',
       start: '20261119T110000',
       end: '20261119T150000',
-      description: 'Haldi ceremony of Kuldeep & Kaamna',
+      description: 'Haldi ceremony of Kaamna & Kuldeep',
     },
   },
   {
@@ -80,11 +80,11 @@ const EVENTS: WeddingEvent[] = [
     note: 'Reception of Baraat',
     highlighted: true,
     calendarData: {
-      title: 'Wedding - Kuldeep & Kaamna',
+      title: 'Wedding - Kaamna & Kuldeep',
       location: 'Grand Marrievilla Ferozpur Road, Ludhiana',
       start: '20261121T210000',
       end: '20261122T020000',
-      description: 'Wedding celebration & Reception of Baraat for Kuldeep & Kaamna',
+      description: 'Wedding celebration & Reception of Baraat for Kaamna & Kuldeep',
     },
   },
 ];

@@ -128,22 +128,22 @@ export const InvitationMain: React.FC = () => {
             className="mt-2"
           >
             <h4 className="font-display text-lg md:text-xl font-bold text-gold-dark tracking-wide mb-1">
-              Mr. Krishan Kumar Goyal &amp; Mrs. Kanta Rani
+              Mrs. Neena Bansal &amp; Mr. Anish Bansal
             </h4>
             <p className="font-body italic font-semibold text-[13px] md:text-sm text-sage-dark/80 mb-2">
-              joyfully invite you to celebrate the wedding of their beloved son
+              joyfully invite you to celebrate the wedding of their beloved daughter
             </p>
             <h3 className="font-script text-6xl md:text-7xl font-normal text-[#8a1f2d] leading-tight tracking-[0.01em]">
-              Kuldeep
+              Kaamna
             </h3>
             <p className="font-semibold italic text-lg md:text-base text-dusty-rose my-1">
               with
             </p>
             <h3 className="font-script text-6xl md:text-7xl font-normal text-[#8a1f2d] leading-tight tracking-[0.01em] mb-1">
-              Kaamna
+              Kuldeep
             </h3>
             <p className="font-display text-lg md:text-xl font-semibold text-gold-dark tracking-wide mt-2">
-              D/o Mrs. Neena Bansal &amp; Mr. Anish Bansal
+              S/o Mrs. Kanta Rani &amp; Mr. Krishan Kumar Goyal
             </p>
           </motion.div>
 
@@ -194,7 +194,7 @@ export const InvitationMain: React.FC = () => {
                     Warm Regards,
                   </p>
                   <p className="pt-2 font-script text-4xl text-[#8a1f2d]">
-                    Goyal’s &amp; Bansal’s
+                    Bansals &amp; Goyals
                   </p>
                 </div>
               </div>

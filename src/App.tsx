@@ -16,7 +16,7 @@ export const App: React.FC = () => {
   const [showEnvelope, setShowEnvelope] = useState(!skipIntro);
 
   useEffect(() => {
-    document.title = 'Kuldeep & Kaamna - Wedding Invitation';
+    document.title = 'Kaamna & Kuldeep - Wedding Invitation';
     // Preload important images
     preloadedImages.forEach((src) => {
       const img = new Image();

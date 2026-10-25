@@ -201,7 +201,7 @@ export const ScratchCard: React.FC<ScratchCardProps> = ({ onRevealed, revealed }
             textAnchor="middle"
             className="fill-[#8a1f2d] font-script text-[26px] font-normal"
           >
-            Kuldeep &amp; Kaamna
+            Kaamna &amp; Kuldeep
           </text>
 
           {/* Delicate Divider */}
