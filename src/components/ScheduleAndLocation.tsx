@@ -25,6 +25,7 @@ export interface WeddingEvent {
   venueCity: string;
   fullAddress: string;
   mapUrl: string;
+  appleMapUrl: string;
   note?: string;
   highlighted?: boolean;
   calendarData: CalendarEvent;
@@ -41,6 +42,7 @@ const EVENTS: WeddingEvent[] = [
     venueCity: 'Sangrur',
     fullAddress: 'Patiala Rd, Military Cantonement, Sangrur, Punjab 148001',
     mapUrl: 'https://maps.app.goo.gl/sZcGQqEJyXGiHKUo9',
+    appleMapUrl: 'https://maps.apple.com/?q=Yadvindra+Dream+Hotel,+Patiala+Rd,+Military+Cantonement,+Sangrur,+Punjab+148001',
     calendarData: {
       title: 'Sangeet - Kaamna & Kuldeep',
       location: 'Yadvindra Dream Hotel, Patiala Rd, Military Cantonement, Sangrur, Punjab 148001',
@@ -59,6 +61,7 @@ const EVENTS: WeddingEvent[] = [
     venueCity: 'Ludhiana',
     fullAddress: '41/1B, Dugri Road, Atam Nagar, Model Town, Ludhiana, Punjab',
     mapUrl: 'https://maps.app.goo.gl/VbTzwTV7LNLPfTx66',
+    appleMapUrl: 'https://maps.apple.com/?q=Hotel+Karlton+Inn,+41/1B,+Dugri+Road,+Atam+Nagar,+Model+Town,+Ludhiana,+Punjab',
     calendarData: {
       title: 'Haldi Ceremony - Kaamna & Kuldeep',
       location: 'Hotel Karlton Inn 41/1B, Dugri Road, Atam Nagar, Model Town, Ludhiana, Punjab',
@@ -77,6 +80,7 @@ const EVENTS: WeddingEvent[] = [
     venueCity: 'Ludhiana',
     fullAddress: 'Ferozpur Road, Ludhiana, Punjab',
     mapUrl: 'https://maps.app.goo.gl/u7AnbK6DUUknm98A9',
+    appleMapUrl: 'https://maps.apple.com/?q=Grand+Marrievilla,+Ferozpur+Road,+Ludhiana,+Punjab',
     note: 'Reception of Baraat',
     highlighted: true,
     calendarData: {
@@ -389,18 +393,34 @@ export const ScheduleAndLocation: React.FC = () => {
                   )}
                 </motion.div>
 
-                {/* Pill Button: OPEN IN MAPS (Matching reference style & project colors) */}
-                <motion.a
-                  href={event.mapUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-[#8a1f2d] hover:bg-[#721824] text-ivory text-xs sm:text-sm tracking-[0.22em] uppercase font-display font-medium shadow-md hover:shadow-xl transition-all duration-300 ring-2 ring-gold/40 hover:ring-gold"
-                >
-                  <MapPin className="w-4 h-4 text-gold-soft" />
-                  <span>Open in Maps</span>
-                </motion.a>
+                {/* Pill Buttons: GOOGLE MAPS & APPLE MAPS */}
+                <div className="flex flex-wrap items-center justify-center gap-3">
+                  <motion.a
+                    href={event.mapUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.97 }}
+                    className="inline-flex items-center justify-center gap-2 px-6 py-2.5 sm:py-3 rounded-full bg-[#8a1f2d] hover:bg-[#721824] text-ivory text-xs sm:text-sm tracking-[0.16em] uppercase font-display font-medium shadow-md hover:shadow-xl transition-all duration-300 ring-2 ring-gold/40 hover:ring-gold"
+                  >
+                    <MapPin className="w-4 h-4 text-gold-soft" />
+                    <span>Google Maps</span>
+                  </motion.a>
+
+                  <motion.a
+                    href={event.appleMapUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.97 }}
+                    className="inline-flex items-center justify-center gap-2 px-6 py-2.5 sm:py-3 rounded-full bg-[#362f22] hover:bg-[#272118] text-ivory text-xs sm:text-sm tracking-[0.16em] uppercase font-display font-medium shadow-md hover:shadow-xl transition-all duration-300 ring-2 ring-gold/40 hover:ring-gold"
+                  >
+                    <svg className="w-4 h-4 fill-current text-gold-soft" viewBox="0 0 170 170">
+                      <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.04-7.6-7.7-11.7-13.98-5.74-8.8-10.22-18.79-13.43-29.98-3.21-11.19-4.82-21.75-4.82-31.68 0-14.54 3.66-26.68 10.98-36.42 7.32-9.74 16.48-14.74 27.48-15 4.35 0 9.29 1.25 14.81 3.75 5.53 2.5 9.4 3.8 11.61 3.9 1.52-.1 5.48-1.45 11.87-4.05 6.4-2.6 11.42-3.8 15.08-3.6 10.22.44 18.66 4.3 25.32 11.6 6.66 7.3 11.05 16.22 13.17 26.77-9.35 5.66-13.9 13.59-13.66 23.8.24 8.05 3.42 14.89 9.54 20.52 6.12 5.63 13.3 8.99 21.54 10.08-2.07 6.3-4.54 12.63-7.41 18.97zM119.22 33.15c0-6.74 2.39-13.26 7.17-19.56 4.78-6.3 10.76-10.83 17.94-13.59-.11 1.09-.27 2.23-.49 3.42-.22 1.19-.54 2.28-.97 3.26-1.52 5.44-4.57 10.71-9.13 15.82-4.57 5.11-9.95 8.65-16.14 10.61-.43-1.09-.76-2.28-.99-3.59-.22-1.3-.39-2.43-.39-3.37z" />
+                    </svg>
+                    <span>Apple Maps</span>
+                  </motion.a>
+                </div>
 
                 {/* Subtle divider between items unless last */}
                 {index < EVENTS.length - 1 && (
