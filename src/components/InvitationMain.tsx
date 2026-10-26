@@ -193,7 +193,7 @@ export const InvitationMain: React.FC = () => {
                     Warm Regards
                   </p>
                   <p className="pt-2 font-script text-4xl md:text-5xl text-[#8a1f2d]">
-                    Bansal’s Family
+                    Bansal Family
                   </p>
                 </div>
               </div>
