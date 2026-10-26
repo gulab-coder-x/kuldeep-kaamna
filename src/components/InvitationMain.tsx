@@ -87,7 +87,7 @@ export const InvitationMain: React.FC = () => {
           className="absolute left-0 w-full sm:left-1/2 sm:-translate-x-1/2 sm:max-w-xl md:max-w-2xl lg:max-w-3xl h-auto pointer-events-none select-none z-20"
           style={{ bottom: '-40px' }}
         />
-        <div className="relative z-10 max-w-xl w-full mx-auto px-6">
+        <div className="relative z-10 max-w-xl w-full mx-auto px-3 min-[390px]:px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -119,7 +119,7 @@ export const InvitationMain: React.FC = () => {
             <p className="font-body italic font-semibold text-sm md:text-base text-sage-dark/85">
               With the heavenly blessings of
             </p>
-            <p className="font-display text-sm md:text-base font-bold text-gold-dark tracking-wide">
+            <p className="font-display text-[11px] min-[360px]:text-[12px] min-[390px]:text-[13px] sm:text-sm md:text-base font-bold text-gold-dark tracking-wide whitespace-nowrap">
               Late. Smt. Suhagwanti &amp; Late. Sh. Roop Lal Bansal
             </p>
           </motion.div>
@@ -131,7 +131,7 @@ export const InvitationMain: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.35 }}
             className="mt-2 pb-28 sm:pb-36 md:pb-44 lg:pb-52"
           >
-            <h4 className="font-display text-lg md:text-xl font-bold text-gold-dark tracking-wide mb-1.5">
+            <h4 className="font-display text-base sm:text-lg md:text-xl font-bold text-gold-dark tracking-wide mb-1.5 whitespace-nowrap">
               Neena Bansal &amp; Anish Bansal
             </h4>
             <p className="font-body italic font-semibold text-[13px] md:text-sm text-sage-dark/80 max-w-md mx-auto mb-3 leading-relaxed whitespace-pre-line">
@@ -147,7 +147,7 @@ export const InvitationMain: React.FC = () => {
             <h3 className="font-script text-6xl md:text-7xl font-normal text-[#8a1f2d] leading-tight tracking-[0.01em] mb-1">
               Kuldeep
             </h3>
-            <p className="font-display text-base md:text-lg font-semibold text-gold-dark tracking-wide mt-2">
+            <p className="font-display text-[11px] min-[360px]:text-[12px] min-[390px]:text-[13px] sm:text-base md:text-lg font-semibold text-gold-dark tracking-wide mt-2 whitespace-nowrap">
               S/o. Smt. Kanta Rani &amp; Sh. Krishan Kumar Goyal
             </p>
 
