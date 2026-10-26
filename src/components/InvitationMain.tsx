@@ -188,9 +188,12 @@ export const InvitationMain: React.FC = () => {
                 <p className="font-body italic text-xl leading-relaxed max-w-md mx-auto whitespace-pre-line">
                   With love in our hearts,{'\n'}we await your gracious presence
                 </p>
-                <div className="pt-6">
-                  <p className="font-body font-semibold italic text-xl md:text-2xl text-sage-dark/80 tracking-wide">
+                <div className="pt-6 space-y-1">
+                  <p className="font-body font-semibold italic text-lg md:text-xl text-sage-dark/80 tracking-wide">
                     Warm Regards
+                  </p>
+                  <p className="pt-2 font-script text-4xl md:text-5xl text-[#8a1f2d]">
+                    Bansal’s Family
                   </p>
                 </div>
               </div>
