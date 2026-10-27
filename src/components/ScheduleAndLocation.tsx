@@ -80,7 +80,7 @@ const EVENTS: WeddingEvent[] = [
     venueCity: 'Ludhiana',
     fullAddress: 'Ferozpur Road, Ludhiana, Punjab',
     mapUrl: 'https://maps.app.goo.gl/u7AnbK6DUUknm98A9',
-    appleMapUrl: 'https://maps.apple.com/?q=Grand+Marrievilla,+Ferozpur+Road,+Ludhiana,+Punjab',
+    appleMapUrl: 'https://maps.apple.com/place?place-id=I904A1AB6D7849673&address=Firozpur+Road%2C+Ludhiana+West%2C+Ludhiana%2C+141101%2C+Punjab%2C+India&coordinate=30.830289%2C75.625543&name=Grand+Marriage+Villa&_provider=9902',
     note: 'Reception of Baraat',
     highlighted: true,
     calendarData: {
